@@ -914,7 +914,7 @@ $("#schedNote").textContent = S.scheduleNote;
 $("#forms").innerHTML = CONFIG.forms.map(f => {
   const btn = (u, k) => u ? `<a class="btn sm" href="${esc(u)}" target="_blank" rel="noopener">${k}</a>` : `<span class="btn sm" aria-disabled="true">${k} 준비 중</span>`;
   return `<li><span class="fn">${esc(f[0])} ${esc(f[1])}<small>${esc(f[2])}</small></span>${btn(f[3], "HWP")}${btn(f[4], "PDF")}</li>`;
-}).join("") + `<li><span class="fn">서식은 서울특별시교육청 누리집 초등교육과 부서업무방에도 올라갑니다.</span>${S.formPage ? `<a class="btn sm" href="${esc(S.formPage)}" target="_blank" rel="noopener">게시글 열기</a>` : ""}</li>`;
+}).join("");
 
 /* 유의사항 */
 $("#must").innerHTML = CONFIG.notices.filter(n => n[0] === "Y").map(n => `<li>${esc(n[1])}</li>`).join("");
