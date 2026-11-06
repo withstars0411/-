@@ -794,7 +794,7 @@ function select(id){
       <div><dt>문의</dt><dd><a href="tel:${r.tel.replace(/[^0-9]/g, "")}">${esc(r.tel)}</a></dd></div>
     </dl>
     ${r.desc ? `<p class="rdesc" id="rdesc">${esc(r.desc)}</p><button class="more" id="more" type="button" aria-expanded="false" aria-controls="rdesc">소개 더 보기</button>` : ""}
-    <a class="btn primary" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.short)} 누리집 바로가기 ${ARROW}<span class="sr">새 창</span></a>`;
+    <a class="btn primary" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.short)} 농촌유학 누리집 바로가기 ${ARROW}<span class="sr">새 창</span></a>`;
   infoBox.querySelectorAll(".chip.tip").forEach(b => {
     /* 말풍선이 화면 오른쪽 밖으로 나가지 않게 왼쪽으로 당긴다 */
     const fit = () => { const t = b.querySelector(".tipbox"), z = parseFloat(getComputedStyle(document.body).zoom) || 1;
